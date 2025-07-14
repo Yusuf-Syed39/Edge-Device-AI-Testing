@@ -19,3 +19,30 @@ This repository contains code, documentation, and results from my work on debugg
 3. **Results**  
    - Confirmed correct functionality across multiple datasets.
    - Documented improvements in execution consistency and efficiency.
+  
+## 🧠 Machine Learning Model
+A lightweight YOLOv8-based **image classification** model (`yolo11n-cls.pt`) was used for training and testing.  
+The model was built and deployed using the [Ultralytics YOLO](https://docs.ultralytics.com/) Python library.
+
+This model was tested on the Jetson Orin Nano Edge Device
+
+Key characteristics:
+- Classifies images into categories (e.g., “hazard” or “clean”)
+- Trained using transfer learning from a pre-trained YOLOv8 checkpoint
+- Inference run on both single images and directories of test images
+
+## 📊 Dataset
+
+The project used a custom image dataset called `hazard_dataset`, which contained labeled images organized in YOLO format:
+
+## 🧪 Output
+
+The training script produces logs of:
+- Accuracy (`top1`, `top5`)
+- Inference speed
+- Memory usage
+- Training loss and fitness
+
+Example:
+<img width="1201" height="469" alt="image" src="https://github.com/user-attachments/assets/9cc3269a-dc93-4c2d-8c0a-eee2a1c0aac6" />
+
